@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const { isValidTask } = require("../script");
+const { isValidTask } = require("../taskUtils");
 
 test("valid task should be accepted", () => {
     assert.strictEqual(isValidTask("Complete assignment"), true);
