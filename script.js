@@ -23,6 +23,14 @@ function addTask() {
     input.value = "";
 }
 
+// Dark Mode
+const darkModeButton = document.getElementById("darkModeButton");
+
+darkModeButton.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+});
+
+// Export function for tests
 if (typeof module !== "undefined") {
     module.exports = { isValidTask };
 }

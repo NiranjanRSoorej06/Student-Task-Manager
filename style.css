@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
+    color: #222;
     margin: 0;
     padding: 0;
+    transition: 0.3s;
 }
 
 .container {
@@ -11,6 +13,7 @@ body {
     background: white;
     padding: 30px;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 h1 {
@@ -43,7 +46,35 @@ li {
 .completed {
     text-decoration: line-through;
 }
-.dark-mode {
+
+/* Dark Mode */
+
+body.dark-mode {
     background: #222;
+    color: white;
+}
+
+body.dark-mode .container {
+    background: #333;
+}
+
+body.dark-mode input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.dark-mode input::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode button {
+    background: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark-mode li {
+    background: #444;
     color: white;
 }
